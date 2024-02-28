@@ -22,7 +22,7 @@ DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 1000))
 LOGGER_ID = int(getenv("LOGGER_ID", None))
 
 # Get this value from @FallenxBot on Telegram by /id
-OWNER_ID = int(getenv("OWNER_ID", 2081040115))
+OWNER_ID = int(getenv("OWNER_ID", 6471218822))
 
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
@@ -32,7 +32,7 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/Programmerofbots/Music_Bot",
+    "https://github.com/Nidra07/MusicXbot",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 GIT_TOKEN = getenv(
@@ -78,10 +78,10 @@ confirmer = {}
 
 
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://te.legra.ph/file/52792e7acc085c69eeb14.jpg"
+    "START_IMG_URL", "https://te.legra.ph/file/a7bf168ee0cd9058d9b8a.jpg"
 )
 PING_IMG_URL = getenv(
-    "PING_IMG_URL", "https://te.legra.ph/file/52792e7acc085c69eeb14.jpg"
+    "PING_IMG_URL", "https://te.legra.ph/file/a7bf168ee0cd9058d9b8a.jpg"
 )
 PLAYLIST_IMG_URL = "https://te.legra.ph/file/4ec5ae4381dffb039b4ef.jpg"
 STATS_IMG_URL = "https://te.legra.ph/file/52792e7acc085c69eeb14.jpg"
@@ -112,12 +112,12 @@ if SUPPORT_CHANNEL:
 if PING_IMG_URL:
     if PING_IMG_URL != "assets/Ping.jpeg":
         if not re.match("(?:http|https)://", PING_IMG_URL):
-            PING_IMG_URL = "https://te.legra.ph/file/52792e7acc085c69eeb14.jpg"
+            PING_IMG_URL = "https://te.legra.ph/file/a7bf168ee0cd9058d9b8a.jpg"
 
 if START_IMG_URL:
     if START_IMG_URL != "assets/Ping.jpeg":
         if not re.match("(?:http|https)://", START_IMG_URL):
-            START_IMG_URL = "https://te.legra.ph/file/52792e7acc085c69eeb14.jpg"
+            START_IMG_URL = "https://te.legra.ph/file/a7bf168ee0cd9058d9b8a.jpg"
             
 if SUPPORT_CHAT:
     if not re.match("(?:http|https)://", SUPPORT_CHAT):
